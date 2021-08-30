@@ -53,6 +53,7 @@ public class WorkManagerThreadExecutor implements ThreadExecutor {
 
     public void initialize() {
         try {
+            // Do nothing just test PR in code guru
             this.workManager = (WorkManager) new InitialContext().lookup(workManagerName);
         } catch (NamingException e) {
             throw new IllegalStateException("Could not locate WorkManager: " + e.getMessage(), e);
